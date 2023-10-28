@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,700&family=Roboto+Slab:wght@500&display=swap');
+@import url("fontawesome/css/all.css");
+
+.header{
+	color:#f4f8f9;
+	font-family: 'Gentium Book Plus', serif;
+}
+.header a{
+	color:#f4f8f9;
+	text-decoration: none;
+}
+.nav a{
+	color:#f4f8f9;
+	text-decoration: none;
+}
+.footer{
+	color:#f4f8f9;
+}
+.footer a{
+	color:#f4f8f9;
+	text-decoration: none;
+}
+.person_info a,.circle a{
+	text-shadow: black;
+	color:#e64300;
+}

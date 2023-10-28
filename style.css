@@ -1,0 +1,598 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+html{
+	height:100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-color: #3b363a;
+}
+.container{
+	background-image: linear-gradient(#1c435c, #221d21, #3b363a);
+	width:1170px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	display:flex;
+	flex-direction: column;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	margin-left: 0px;
+	margin-top: 0px;
+	text-align: center;
+	color:#f4f8f9;
+}
+.header h1{
+	margin-bottom: 0px;
+}
+.header a:hover{
+	color:#e64300;
+}
+.header p{
+	margin-top: 0px;
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 14pt;
+}
+.nav li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 10px;
+}
+.nav a:hover{
+	color:#e64300;
+}
+.aside{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.aside ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+.aside li {
+	list-style-type: none;
+	display: inline-flex;
+	flex-direction: column;
+	padding-inline: 20px;
+	justify-content: center;
+}
+
+.circle {
+  background: #f4f8f9;
+  border: 1px solid #f4f8f9;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  font-size:24pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circle:hover{
+	border: 3px solid #e64300;
+	color:#e64300;
+  	transition: 1s;
+  	transform: scale(1.5, 1.5)
+}
+
+.content{
+    width: 100%;
+    margin-top: 0%;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4f8f9;
+    flex: 1;
+}
+.col{
+	position: relative;
+	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.set_main{
+	display: flex;
+	flex-direction: column;
+}
+.main_content{
+	    flex: 1 1 auto;
+}
+.main_footer{
+	bottom: 0;
+}
+.footer{
+	position: relative;
+	bottom:0;
+	height:20px;
+	background-color: #1c435c;
+}
+.main{
+	flex: 1 1 auto;
+	display: flex;
+    flex-direction: column;
+}
+.row{
+	    display: flex;
+    flex: 1;
+}
+.row:before,.row:after{
+	content: "";
+	display: table;
+}
+.row:after{
+	clear:both;
+}	
+	
+.position{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+img{
+	height: 650px;
+	border-radius: 5%;
+}
+.set_iframe{
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.person_info{
+	display: none;
+}
+content{
+	display: flex;
+    flex: 1 1 auto;
+}
+
+.aside_left{
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    width: 16.67%;
+}
+.aside_left li{
+	padding-bottom: 20px;
+}
+.aside_left ul{
+list-style-type: none;
+padding-left: 75px;
+}
+.aside_left a{
+text-decoration: none;
+color: #f4f8f9;
+}
+.aside_left a:hover{
+	color:#e64300;
+}
+.aside_right{
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    width: 16.67%;
+}
+.aside_right ul{
+list-style-type: none;
+padding-left: 25px;
+}
+.aside_right a{
+text-decoration: none;
+color: #f4f8f9;
+}
+.aside_right a:hover{
+	color:#e64300;
+}
+.aside_right li{
+	padding-bottom: 20px;
+}
+iframe{
+	display: flex;
+	flex:1;
+	border:none;
+	width: 100%;
+}
+#hidden_menu{
+	display:none;
+}
+#hidden_menu2{
+	display:none;
+}
+.aside_top{
+	float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    text-align: center;
+    display: none;
+}
+.aside_top ul{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.aside_top a{
+text-decoration: none;
+color: #f4f8f9;
+}
+.aside_top a:hover{
+	color:#e64300;
+}
+.aside_top li{
+    padding-bottom: 10px;
+    display: inline-block;
+    padding-right: 20px;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+
+@media (max-width:768px) {
+.container {
+    width: 321px;
+}
+.aside{
+	display: none;
+}
+.aside_top{
+    display: block;
+}
+.header{
+	font-size: 7pt;
+}
+
+.nav{
+	padding-left: 0px;
+	margin-top: 0px;
+
+}
+.nav ul{
+	padding-left: 0px;
+	padding-top: 3px;
+	margin-bottom: 0px;
+
+}
+.nav li{
+	display: block;
+	font-size: 10pt;
+	padding-bottom: 12px;
+}
+
+.article{
+	font-size: 12pt;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.article h2{
+	font-size: 24px;
+}
+
+img{
+	height: 350px;
+	width: 100%;
+}
+.person_box {
+	perspective: 1000px; /*задает объекту свойства 3д объекта, делая более дальние относительно оси Z объекты меньше, а ближние - больше,чем больше пикселей, тем больше расстояние до "зрителя"*/
+	height:350px;
+	display: inline-block; 
+}
+.person{
+	position: relative; /*позиция относительно родительского контейнера с классом container__persona*/
+	cursor: pointer;
+	width: 250px;
+	height:350px;
+	transition: 1s;  /*время перехода трансформации*/
+	transform-style: preserve-3d; /*преобазует 2д пространство контейнера с классом container в 3д, так же позволяя потомкам блока с классом container использовать его пространство*/
+}
+.person_info {
+	background-color: #092b40;
+	display: flex;
+	width: 250px;
+	height: 350px;
+	text-align: center;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	z-index: 1; /*Обозначает слой на котором находится div, в данном примере всегда снизу div с persona_foto*/
+	transform: rotateY(180deg); /*Отображение/скрытие задней стороны элемента при трансформации, в данном примере скрывает зеркальное отображение persona__info*/
+	border-radius: 5%;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content:space-evenly;
+	font-size: 36pt;
+
+}
+.person_box:hover .person{
+	transform: rotateY(180deg); /*задает трансформацию контейнеру с классом persona для поворота на 180 градусов при наведении курсора на контейнер с классом container__persona*/
+}
+.person_photo{
+	width: 250px;
+	height: 350px;
+	overflow: hidden;
+	z-index: 2;  /*Обозначает слой на котором находится div, в данном примере всегда сверху родительского*/
+	position: absolute;  /*позиционирование относительно контейнера с классом ontainer__persona*/
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;/*Отображение/скрытие задней стороны элемента при трансформации, в данном примере скрывает зеркальное отображение фото*/
+	border-radius: 15px; 
+}
+.aside_left{
+	display: none;
+}
+.aside_right{
+	display: none;
+}
+
+.col-sx-12 {
+    width: 100%;
+}
+.col-sx-11 {
+    width: 91.66666667%;
+}
+.col-sx-10 {
+    width: 83.33333333%;
+}
+.col-sx-9 {
+    width: 75%;
+}
+.col-sx-8 {
+    width: 66.66666667%;
+}
+.col-sx-7 {
+    width: 58.33333333%;
+}
+.col-sx-6 {
+    width: 50%;
+}
+.col-sx-5 {
+    width: 41.66666667%;
+}
+.col-sx-4 {
+    width: 33.33333333%;
+}
+.col-sx-3 {
+    width: 25%;
+}
+.col-sx-2 {
+    width: 16.66666667%;
+}
+.col-sx-1 {
+    width: 8.33333333%;
+}
+}
+@media (min-width: 769px) and (max-width:991px) {
+.container {
+    width: 750px;
+}
+.header{
+	font-size: 10pt;
+}
+.nav{
+	font-size: 13pt;
+}
+img{
+	height:450px;
+}
+.aside li {
+	display: block;
+	padding-bottom: 20px;
+}
+.aside ul{
+	flex-direction: column;
+	align-items: center;
+	padding-left: 0px;
+}
+
+.article{
+	font-size: 12pt;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.aside_right{
+	display: none;
+}
+.aside_left ul{
+padding-left: 15px;
+}
+#hidden_menu{
+	display: block;
+}
+#hidden_menu2{
+	display: block;
+}
+.col-sm-12 {
+    width: 100%;
+}
+.col-sm-11 {
+    width: 91.66666667%;
+}
+.col-sm-10 {
+    width: 83.33333333%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-8 {
+    width: 66.66666667%;
+}
+.col-sm-7 {
+    width: 58.33333333%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-5 {
+    width: 41.66666667%;
+}
+.col-sm-4 {
+    width: 33.33333333%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-2 {
+    width: 16.66666667%;
+}
+.col-sm-1 {
+    width: 8.33333333%;
+}
+}
+@media (min-width: 992px) and (max-width:1999px) {
+  .container {
+    width: 970px;
+}
+img{
+	height:550px;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+.col-md-11 {
+    width: 91.66666667%;
+}
+.col-md-10 {
+    width: 83.33333333%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66.66666667%;
+}
+.col-md-7 {
+    width: 58.33333333%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.66666667%;
+}
+.col-md-4 {
+    width: 33.33333333%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+.col-md-1 {
+    width: 8.33333333%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+}
+img{
+	height: 650px;
+}
+.nav{
+	font-size: 15pt;
+}
+.article{
+	font-size: 14pt;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.col-lg-12 {
+    width: 100%;
+}
+.col-lg-11 {
+    width: 91.66666667%;
+}
+.col-lg-10 {
+    width: 83.33333333%;
+}
+.col-lg-9 {
+    width: 75%;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+}
+.col-lg-7 {
+    width: 58.33333333%;
+}
+.col-lg-6 {
+    width: 50%;
+}
+.col-lg-5 {
+    width: 41.66666667%;
+}
+.col-lg-4 {
+    width: 33.33333333%;
+}
+.col-lg-3 {
+    width: 25%;
+}
+.col-lg-2 {
+    width: 16.66666667%;
+}
+.col-lg-1 {
+    width: 8.33333333%;
+}

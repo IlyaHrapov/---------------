@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+html{
+	height:100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-color: #f4f8f9;
+}
+table{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background-color: #f4f8f9;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 8px;
+}
+
+td{
+  color: #669;
+  padding: 9px 8px;
+  transition: .3s linear;
+}
+img{
+	width: 450px;
+	height:250px;
+  border-radius: 5%;
+}
+tr:hover img{
+border:3px solid #e64300;
+}
+tr td:hover{
+  color:#e64300 ;
+}
+input{
+  display: none;
+}
+@media (max-width:768px) {
+.container {
+    width: 321px;
+}
+tr{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    height: 150px;
+    width: 260px;
+}
+
+td{
+  font-size: 8pt;
+  float: left;
+}
+.limiter {
+  max-height: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
+}
+.read-more-checker:checked ~ .limiter {
+  max-height: none;
+}
+.read-more-checker ~ .read-more-button:before {
+  content: "Развернуть »";
+}
+.read-more-checker:checked ~ .read-more-button:before {
+  content: "Свернуть «";
+}
+.read-more-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #777;
+  text-decoration: underline;
+}
+}
+@media (min-width: 769px) and (max-width:991px) {
+.container {
+    width: 750px;
+    }
+img{
+  height: 200px;
+    width: 360px;
+}
+.limiter {
+  max-height: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.read-more-checker {
+  opacity: 0;
+  position: absolute;
+}
+.read-more-checker:checked ~ .limiter {
+  max-height: none;
+}
+.read-more-checker ~ .read-more-button:before {
+  content: "Развернуть »";
+}
+.read-more-checker:checked ~ .read-more-button:before {
+  content: "Свернуть «";
+}
+.read-more-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #777;
+  text-decoration: underline;
+}
+}
